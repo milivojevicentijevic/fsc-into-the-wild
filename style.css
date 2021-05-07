@@ -25,7 +25,7 @@ basic styles
 body {
     font-family: var(--fontFamily);
     font-size: var(--fontSize);
-    color: var(--gray);
+    color: var(--text);
     line-height: 1.8;
     background-image: linear-gradient(rgba(246, 149, 96,.7), rgba(90, 98, 132,.7)),url(img/bg.jpg);
     background-position: top;
@@ -55,6 +55,9 @@ h2 {
     font-size: 2rem;
     color: var(--red);
     padding-bottom: 20px;
+}
+ul {
+    list-style: none;
 }
 /**********************
 grid system
@@ -144,7 +147,116 @@ two
     height: 100%;
     object-fit: cover;
 }
-
+/**********************
+three
+**********************/
+.three {
+    padding: 60px;
+}
+.three .col-4 {
+    padding: 20px;
+}
+.three img {
+    width: 100%;
+    display: block;
+    height: auto;
+    transition: var(--transition);
+}
+.three img:hover {
+    transform: scale(1.03);      
+}
+/**********************
+four
+**********************/
+.four {
+    background: linear-gradient( to right, var(--brown), var(--gray));
+    color: var(--lightgray);
+    padding: var(--padding);
+    text-align: center;
+}
+.four h2 {
+    color: var(--lightgray);
+    padding-bottom: 10px;
+}
+.four input {
+    padding: 16px;
+    background-color: transparent;
+    border: 2px solid var(--borders);
+    border-radius: 10px 0px 0px 10px;
+    width: 275px;
+    outline: none;
+    color: var(--lightgray);
+    font-size: 1rem;
+    line-height: 1.2;
+}
+.four input::placeholder {
+    color: var(--borders);
+    font-size: 1rem;
+    font-weight: 400;
+}
+.four button {
+    border-radius: 0 10px 10px 0;
+    position: relative;
+    left: -5px;
+    background-color: var(--borders);
+    color: var(--text);
+    margin-bottom: 10px;
+}
+.four button:hover {
+    background-color: var(--borders);
+    color: var(--gray);
+    border-color: var(--borders);
+}
+/**********************
+five
+**********************/
+.five {
+    padding: 60px 20px;
+    text-align: center;
+}
+.five h2 {
+    padding-bottom: 10px;
+}
+.five article:last-child {
+    padding-top: 30px;
+}
+.five i {
+    font-size: 2rem;
+    color: var(--red);
+    padding: 20px;
+    border: 2px solid var(--borders);
+    border-radius: 50%;
+}
+.five .col-4 {
+    border-right: 1px solid var(--borders);
+}
+.five .col-4:last-child {
+    border-right: none;
+}
+/**********************
+footer
+**********************/
+footer {
+    background-color: var(--borders);
+    padding: 30px;
+}
+footer p {
+    float: left;
+}
+footer ul {
+    float: right;
+}
+footer li {
+    display: inline-block;
+}
+footer a {
+    color: var(--text);
+    margin-left: 25px;
+    transition: var(--transition);
+}
+footer a:hover {
+    color: var(--red);
+}
 
 /**********************
 responsive
