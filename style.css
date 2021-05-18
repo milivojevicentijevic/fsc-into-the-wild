@@ -265,4 +265,27 @@ responsive
     [class*="col-"] {
         width: 100%;
     }
+    main {
+        width: 90%;
+        margin: 30px auto;
+    }
+    header {
+        padding: 20px;
+    }
+    header article {
+        width: 100%;
+    }
+    header h1 {
+        font-size: 3rem;
+        line-height: 1.2;
+    }
+    .three {
+        padding: 20px;
+    }
+    .three .col-4 {
+        padding: 10px;
+    }
+    .three img:hover {
+        transform: unset;      
+    }
 }
